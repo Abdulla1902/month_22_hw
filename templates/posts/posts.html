@@ -1,0 +1,14 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+    <div class="posts">
+        {% for post  in posts %}
+            <div class="card" style="width: 20%">
+                <div class="card-body">
+                    <h5 class="card_title">{{ post.title }}</h5>
+                    <a href="#" class="btn btn-primary">More</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
